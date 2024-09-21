@@ -1,0 +1,173 @@
+.edit-main-container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 20px;
+}
+
+.edit-main-container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.edit-main-container-header-left{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.edit-main-container-header-left p{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.edit-main-container-header-left p span{
+    color:rgb(156,163,175);
+}
+
+.edit-main-container-header-right{
+    border: 1px solid rgb(209 213 219);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.edit-main-container-header-right:hover{
+    background-color: rgb(243 244 246);
+}
+
+.edit-main-container-header-right svg{
+    fill: #737373;
+}
+
+.edit-main-container-contents{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-main-container-contents-textbox-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.edit-main-container-contents-textbox-container input{
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(209,213, 219);
+}
+
+.edit-main-container-contents input[type="file"]{
+    display: none;
+}
+
+.edit-main-container-contents-upload-btn{
+    background-color: transparent;
+    padding: 8px;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgb(209 213 219);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.edit-main-container-contents-upload-btn:hover{
+    border: 1px solid black;
+}
+
+.edit-main-container-contents-image-container{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.edit-main-container-contents-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.edit-main-container-contents-image-tools-remove{
+    border: 1px solid rgb(209 213 219);
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.edit-main-container-contents-image-tools-remove:hover{
+    border: 1px solid black;
+}
+
+.edit-main-container-contents-image-tools-placement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.edit-main-container-contents-image-tools-placement p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.edit-main-container-contents-image-tools-placement-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 5px;
+    border: 1px solid rgb(209 213 219);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-main-container-contents-image-tools-placement-right:hover{
+    border: 1px solid black;
+}
+
+
+.react-switch-handle{
+    height: 15px !important;
+    width: 15px !important;
+    margin-top: 1.5px !important;
+    margin-left: 4px;
+}
+
+.edit-main-container-contents-checkbox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.edit-main-container-contents-checkbox-container label{
+    font-size: 14px;
+    font-weight: 500;
+}
