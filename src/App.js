@@ -1,10 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css';
 import SideBar from './components/SideBar'
 import WellcomeScreen from './components/WellcomeScreen';
 import image from './assets/img1.jpg'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
+
+  useEffect(()=>{
+    AOS.init({
+      easing: 'ease',
+    });
+  },[])
 
   const [enableEmailEdit, setEnableEmailEdit] = useState(false);
 
@@ -20,7 +29,7 @@ function App() {
     id:0,
     title: '',
     description: '',
-    email:'',
+    email:'ima7str@gmail.com',
     required: false
   })
 

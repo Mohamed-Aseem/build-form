@@ -20,7 +20,6 @@ function SideBar({welcomeData, setWelcomeData,enableEmailEdit, setEnableEmailEdi
 
   const [enableHomeEdit, setEnableHomeEdit] = useState(false);
 
-
   useEffect(()=>{
     AOS.init();
   },[])

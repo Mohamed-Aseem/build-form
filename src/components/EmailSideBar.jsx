@@ -28,10 +28,10 @@ function EmailSideBar({setEnableEmailEdit, mainData, setMainData}){
           setTempData(mainData);
           setEnableEmailEdit(false)
         }else{
-          toast("This is an invalid email!");
+          toast.error("This is an invalid email!");
         }
       }else{
-        toast("Please enter your email!");
+        toast.error("Please enter your email!");
       }
       
     }else{
@@ -43,7 +43,7 @@ function EmailSideBar({setEnableEmailEdit, mainData, setMainData}){
           setTempData(mainData);
           setEnableEmailEdit(false)
         }else{
-          toast("This is an invalid Email!");
+          toast.error("This is an invalid Email!");
         }
       }
     }
