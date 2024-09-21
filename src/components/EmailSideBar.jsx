@@ -20,9 +20,9 @@ function EmailSideBar({setEnableEmailEdit, mainData, setMainData}){
   }
 
   const handleSave = () =>{
-    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const mailformat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
-    if(mainData.required == true){
+    if(mainData.required === true){
       if(mainData.email !== null && mainData.email !== ''){
         if(mailformat.test(mainData.email)){
           setTempData(mainData);
@@ -35,7 +35,7 @@ function EmailSideBar({setEnableEmailEdit, mainData, setMainData}){
       }
       
     }else{
-      if(mainData.email == null || mainData.email == ''){
+      if(mainData.email === null || mainData.email === ''){
         setTempData(mainData);
         setEnableEmailEdit(false)
       }else{
@@ -60,7 +60,7 @@ function EmailSideBar({setEnableEmailEdit, mainData, setMainData}){
   }
 
   const handleSwitch = () =>{
-    if(mainData.required == false){
+    if(mainData.required === false){
       setMainData((prevData)=>({
         ...prevData,
         required : true
