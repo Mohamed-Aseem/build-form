@@ -125,6 +125,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
+    width: calc(100%/4);
 }
 
 .side-bar-upper-container-1-bottom div:hover{
@@ -241,5 +242,26 @@
     }
     100%{
         left: 0;
+    }
+}
+
+
+
+@media (max-width:1200px) {
+    .side-bar-upper-container-1-bottom{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .side-bar-upper-container-1-bottom div{
+        width: 100px;
+    }
+
+    .side-bar-lower-btn-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-bar-uper-container-2-add-btn{
+        width: 100px;
     }
 }
